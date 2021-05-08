@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">ConfectioneryApplication</string>
+	<string name="home">Home</string>
+	<string name="loyalty">Loyalty</string>
+	<string name="account">Account</string>
+	<string name="shopping_cart">Shopping Cart</string>
+</resources>
