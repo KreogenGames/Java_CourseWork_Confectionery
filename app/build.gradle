@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.application'
-    id 'org.springframework.boot' version '2.4.4'
 }
 
 android {

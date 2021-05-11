@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 xmlns:app="http://schemas.android.com/apk/res-auto"
 			 xmlns:tools="http://schemas.android.com/tools"
 			 android:layout_width="match_parent"
 			 android:layout_height="match_parent"
 			 tools:context=".UI.AccountFragment">
-
-	<LinearLayout
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="25dp"
-			android:layout_gravity="center_horizontal"
-			android:gravity="center"
-			android:orientation="vertical">
-
-		<Textview
-				android:textSize="35sp"
-				android:text="@string/app_name"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"/>
-	</LinearLayout>
-
-	<TextView
-		android:id="@+id/signIn"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textSize="12sp"
-		android:layout_marginBottom="30dp"
-		android:text="@string/signIn"/>
 
 	<LinearLayout
 			android:layout_width="match_parent"
@@ -34,24 +12,25 @@
 			android:layout_height="wrap_content"
 			android:layout_margin="10dp"
 			android:layout_marginBottom="25dp"
-			android:orientation="horizontal">
+			android:orientation="horizontal" android:gravity="bottom|center_horizontal"
+			android:layout_gravity="bottom|center_vertical" android:paddingBottom="20dp">
 
 		<Button
-			android:id="@+id/btnSignIn"
-			android:text="@string/btnSignIn"
-			android:background="@color/design_default_color_primary_dark"
-			android:layout_marginRight="6dp"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"/>
+				android:id="@+id/btnSignIn"
+				android:text="@string/btnSignIn"
+				android:background="@color/design_default_color_primary_dark"
+				android:layout_marginRight="6dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_marginEnd="6dp" tools:ignore="ButtonStyle"/>
 		<Button
-			android:id="@+id/btnRegister"
-			android:text="@string/btnRegister"
-			android:background="@color/design_default_color_primary_dark"
-			android:layout_marginLeft="6dp"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"/>
+				android:id="@+id/btnRegister"
+				android:text="@string/btnRegister"
+				android:background="@color/design_default_color_primary_dark"
+				android:layout_marginLeft="6dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_marginStart="6dp" tools:ignore="ButtonStyle"/>
 	</LinearLayout>
 
 
