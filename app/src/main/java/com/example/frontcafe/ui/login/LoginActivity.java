@@ -1,7 +1,14 @@
 package com.example.frontcafe.ui.login;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
+import android.os.Handler;
+import android.os.Message;
+import android.view.inputmethod.InputMethodManager;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import android.os.Bundle;
@@ -22,6 +29,7 @@ import android.widget.Toast;
 
 import com.example.frontcafe.MainActivity;
 import com.example.frontcafe.R;
+import com.example.frontcafe.ServerWork;
 import com.example.frontcafe.ui.login.LoginViewModel;
 import com.example.frontcafe.ui.login.LoginViewModelFactory;
 
@@ -29,8 +37,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 
-
-
+    final EditText usernameEditText = findViewById(R.id.username);
+    final EditText passwordEditText = findViewById(R.id.password);
+    final Button loginButton = findViewById(R.id.login);
+    private Context context;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -122,5 +132,27 @@ public class LoginActivity extends AppCompatActivity {
 
     public void clpick(View view) {
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
+    }
+
+    public void onClick(View v) {
+        InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+        final ServerWork serverWork = new ServerWork(context);
+        final String login = usernameEditText.getText().toString();
+        final String password = passwordEditText.getText().toString();
+
+        Runnable runnable = null;
+
+        runnable = new Runnable() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            @Override
+            public void run() {
+                Message message = new Message();
+                message.arg1 = serverWork.signUpServer(login,password);
+            }
+        };
+
+        Thread thread = new Thread(runnable);
+        thread.start();
+
     }
 }
