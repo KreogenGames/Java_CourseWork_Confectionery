@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Ect">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+            android:src="@drawable/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line"
+            android:translationY="10dp"
+            android:scaleX="150"
+            app:srcCompat="@drawable/line"
+            android:contentDescription="@string/lone"/>
+
+    <ImageView
+            android:src="@drawable/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line2"
+            android:translationY="50dp"
+            android:scaleX="150"
+            app:srcCompat="@drawable/line"
+            android:contentDescription="@string/line"/>
+
+    <ImageView
+            android:src="@drawable/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line4"
+            android:translationY="70dp"
+            android:scaleX="150"
+            app:srcCompat="@drawable/line"
+            android:contentDescription="@string/line"/>
+
+    <ImageView
+            android:src="@drawable/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line5"
+            android:translationY="200dp"
+            android:scaleX="150"
+            app:srcCompat="@drawable/line"
+            android:contentDescription="@string/line"/>
+
+    <ImageView
+            android:src="@drawable/log"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/logoch"
+            android:contentDescription="@string/log"
+            android:translationY="15dp"
+            android:translationX="40dp"/>
+
+    <TextView
+            android:text="Войти"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Vhod"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:translationY="13dp"
+            android:translationX="90dp"/>
+
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Voity"
+            android:translationY="6dp"
+            android:alpha="0"
+            android:onClick="vhod"
+            tools:ignore="OnClick"/>
+
+    <ImageView
+            android:src="@drawable/get_a_discount"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:translationY="80dp"
+            android:translationX="43dp"
+            android:contentDescription="TODO"/>
+
+    <TextView
+            android:text="@string/promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="#000000"
+            android:translationY="85dp"
+            android:translationX="80dp"/>
+
+    <ImageView
+            android:src="@drawable/kod"
+            android:layout_width="235dp"
+            android:layout_height="24dp"
+            android:id="@+id/imageView6"
+            android:translationY="120dp"
+            android:translationX="0dp"/>
+
+    <ImageView
+            android:src="@drawable/rep"
+            android:layout_width="236dp"
+            android:layout_height="23dp"
+            android:id="@+id/imageView7"
+            android:translationY="120dp"
+            android:translationX="180dp"/>
+
+    <Button
+            android:text="Button"
+            android:layout_width="167dp"
+            android:layout_height="35dp"
+            android:id="@+id/button2"
+            android:translationY="115dp"
+            android:translationX="215dp"
+            android:alpha="0"/>
+
+    <ImageView
+            android:src="@drawable/fr"
+            android:layout_width="29dp"
+            android:layout_height="27dp"
+            android:id="@+id/imageView8"
+            android:translationY="160dp"
+            android:translationX="30dp"/>
+
+    <TextView
+            android:text="Вы пригласили 0000 друзей"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:translationY="165dp"
+            android:translationX="70dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="#9C000000"/>
+
+</FrameLayout>

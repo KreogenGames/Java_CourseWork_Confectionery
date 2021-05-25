@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Menu">
+
+
+    <ImageView
+            android:src="@drawable/poisk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ad_dres"
+            android:translationY="55dp"
+            android:contentDescription="TODO"/>
+
+    <ImageView
+            android:src="@drawable/ad_res"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/swth"
+            android:translationY="10dp"
+            android:translationX="15dp"/>
+
+    <ImageView
+            android:src="@drawable/tortik"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tort_ik"
+            android:translationX="10dp"
+            android:translationY="-25dp"/>
+
+    <Button
+            android:text="Button"
+            android:layout_width="388dp"
+            android:layout_height="162dp"
+            android:id="@+id/button3"
+            android:alpha="0"
+            android:translationY="140dp"
+            android:translationX="10dp"
+            />
+
+</FrameLayout>

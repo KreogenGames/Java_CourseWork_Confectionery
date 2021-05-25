@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".AboutUs"
+             android:id="@+id/wow">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/AU"
+            android:textAlignment="center"
+            android:typeface="serif"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:lineSpacingExtra="8sp"
+            android:translationX="5dp"
+            android:id="@+id/mail"/>
+
+    <TextView
+            android:text="@string/thanks"
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/thank"
+            android:textAlignment="center"
+            android:textSize="52sp"
+            android:typeface="monospace"
+            android:fontFamily="casual"
+            android:lineSpacingExtra="8sp"
+            android:textColor="#FF0000"
+            android:translationY="550dp"/>
+
+    <ImageView
+            android:src="@drawable/programmer"
+            android:layout_width="match_parent"
+            android:layout_height="411dp"
+            android:id="@+id/imageView"
+            android:contentDescription="@string/progr"
+            android:translationY="145dp"/>
+
+    <ImageButton
+            android:src="@drawable/kr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false"
+            android:tint="#000000"
+            android:background="#00FFFFFF"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:layout_gravity="right|fill_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:onClick="clc"
+            tools:ignore="OnClick"/>
+
+</FrameLayout>

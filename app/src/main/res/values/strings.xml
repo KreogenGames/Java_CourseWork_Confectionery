@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name" translatable="false">frontcafe</string>
+    <string name="nav_menu" translatable="false">Меню</string>
+    <string name="nav_home" translatable="false">Начало</string>
+    <string name="nav_logo" translatable="false"/>
+    <string name="nav_disc" translatable="false">Акции</string>
+    <string name="nav_ect" translatable="false">Ещё</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AU">\nЗдравствуй, дорогой пользователь!\n
+    \nОчень надеемся, что тебе нравится наше приложение. \nМы маленькая команда разработчиков, которая старается ради твоего комфорта.\nОцени нас!</string>
+    <string name="thanks">Спасибо!</string>
+    <string name="aboutus">AboutUS</string>
+    <string name="corzi"/>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="progr">TODO</string>
+    <string name="lone">TODO</string>
+    <string name="line">TODO</string>
+    <string name="log">TODO</string>
+    <string name="click">click</string>
+    <string name="promo">Ваш промокод</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

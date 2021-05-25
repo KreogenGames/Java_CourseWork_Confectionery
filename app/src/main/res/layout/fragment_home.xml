@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Home">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Популярные акции"
+            android:fontFamily="@font/roboto"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:translationX="15dp"
+            android:translationY="5dp"
+            android:id="@+id/pop_t"/>
+
+    <ImageView
+            android:src="@drawable/tabl_dis"
+            android:layout_width="390dp"
+            android:layout_height="271dp"
+            android:id="@+id/tab_dis"
+            android:translationX="10dp"/>
+
+    <ImageView
+            android:src="@drawable/act_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/act_diis"
+            android:translationX="15dp"
+            android:translationY="40dp"/>
+
+    <ImageView
+            android:src="@drawable/w_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/week_dis"
+            android:translationY="40dp"
+            android:translationX="185dp"/>
+
+
+</FrameLayout>
